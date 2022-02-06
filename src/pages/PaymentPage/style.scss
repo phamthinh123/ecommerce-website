@@ -1,0 +1,175 @@
+.paymentPage{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+   
+    .heading{
+        width: 100%;
+        height: 8rem;
+        position: relative;
+        margin-bottom:3rem; 
+            .heading__image{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+            .heading__title{
+                position: absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+                text-transform: uppercase;
+                color: white;
+                font-weight: bold;
+            }
+        
+    }
+    .formInfo{
+        width:46%;
+        
+        margin-right: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        border:1px solid rgba(0,0,0,0.3);
+        padding:1.5rem 2rem;
+        .form__title{
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .inputForm{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1.5rem;
+            position: relative;
+
+            .form__label{
+                position: absolute;
+                top:0;
+                left:0;
+                padding: 0.5rem 0;
+                font-size: 1rem;
+                color:gray;
+                transition: 0.3s all ease;
+            }
+            .form__email,.form__name,.form__phone,.form__city,.form__address{
+                outline:none;
+                border:none;
+                font-size: 1rem;
+                border-bottom: 1px solid rgba(0,0,0,0.3);
+                padding:0.5rem 0rem;
+                transition: 0.5s all ease;
+                
+                &:hover{
+                    border-bottom: 1px solid black;
+                }
+
+                &:focus,&:valid + .form__label{
+                   top:-50%;
+                   font-size: 0.6rem;
+                   color:black;
+                }
+                &:focus{
+                    border-bottom: 1px solid black;
+                    font-size: 1rem;
+                }
+            }
+
+        }
+        .checkbox{
+            display: flex;
+            align-items: center;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            
+            .inputCheck{
+                width: 20px;
+                height: 20px;
+                margin-right: 0.5rem;
+            }
+
+        }
+        .serviceImg{
+            margin-top: 3rem;
+        }
+        
+    }
+    .payment{
+       width: 47%;
+        margin-left: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        border:1px solid rgba(0,0,0,0.3);
+        padding:1.5rem 2rem;
+        
+        display: flex;
+        flex-direction: column;
+        border:1px solid rgba(0,0,0,0.3);
+        padding:1.5rem 2rem;
+        .form__title{
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .cart{
+            width: 100%;  
+            .title{
+                margin-bottom:0.5rem;
+            }  
+             .productCart{
+                 display: flex;
+                 margin-bottom: 1rem;
+                 
+                img{
+                    width: 200px;
+                    height: auto;
+                    object-fit: cover;
+                    object-position: center;
+                    margin-right: 1rem;
+                }
+                .title{
+                    margin-bottom: 1rem;
+                    
+                }
+                .price{
+                    margin-bottom: 0.5rem;
+                }
+                .size{
+                    border:1px solid black;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 40px;
+                    height: 40px;
+                }
+             }
+             .totalAmount{
+                width: 100%;
+                margin-top:1rem;
+                border:1px solid rgba(0,0,0,0.3);
+                padding:1rem;
+                
+                .total{
+                    margin-bottom: 1rem;
+                }
+               .btnPayment{
+                display: block;
+                background:#ffb52e;
+                outline:none;
+                border:none;
+                color:white;
+                padding:0.6rem 0.6rem;
+                cursor: pointer;
+                text-align: center;
+                border-radius: 7px;
+                width: 100%;
+                text-transform: uppercase;
+               }
+
+            }
+            }
+    }
+    
+}

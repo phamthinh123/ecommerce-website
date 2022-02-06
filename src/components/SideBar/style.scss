@@ -1,0 +1,47 @@
+.sideBar{
+    width: 100%;
+    flex-basis: 300px;
+    display: flex;
+    flex-direction: column;
+   
+    
+  
+    .profile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        padding: 2rem 0;
+        align-items: center;
+        border:1px solid rgba(0,0,0,.3);
+        .profile__icon{
+            font-size: 4rem;
+        }
+
+    }
+    .link{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        flex:1;
+        .linkHone{
+            
+            padding: 1rem 0;
+          
+            border:1px solid rgba(0,0,0,.3);
+        }
+        .linkSignOut{
+            padding:1rem 0;
+            height: 100%;
+            border:1px solid rgba(0,0,0,.3);
+            flex:1;
+            cursor: pointer;
+            transition: 0.2s all ease;
+            &:hover{
+                color:#ffb52e;
+            }
+    }
+  }
+}

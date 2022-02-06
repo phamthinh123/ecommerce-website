@@ -1,0 +1,183 @@
+.drawer{
+    position: fixed;
+    top:0;
+    right:0;
+    width: 33%;
+    height:100%;
+    overflow-y: scroll;
+    z-index: 100;
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.3);
+    padding:1rem;
+    background:white;
+    .wrap{
+        width: 100%;
+        height: auto;
+       
+        .heading{
+            text-align: center;
+            
+             height: 8rem;
+             position: relative; 
+             margin-bottom: 2rem;
+                 .deleteIcon{
+                     position: absolute;
+                     top:5%;
+                     right: 2%;
+                     color:white;
+
+                 }
+                 .heading__image{
+                     width: 100%;
+                     height: 100%;
+                     object-fit: cover;
+                     object-position: center;
+                 }
+                 .heading__title{
+                     position: absolute;
+                     top:50%;
+                     left:50%;
+                     transform: translate(-50%,-50%);
+                     text-transform: uppercase;
+                     color: white;
+                     font-weight: bold;
+                 }
+             
+         }
+         .cart{
+            width: 100%;    
+             .productCart{
+                 display: flex;
+                 margin-bottom: 1rem;
+                 
+                img{
+                    width: 200px;
+                    height: auto;
+                    object-fit: cover;
+                    object-position: center;
+                    margin-right: 1rem;
+                }
+                .title{
+                    margin-bottom: 1rem;
+                    
+                }
+                .price{
+                    margin-bottom: 0.5rem;
+                }
+                .wrapContent{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 0.5rem;
+                    .size{
+                        border:1px solid black;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 40px;
+                        height: 40px;
+                    }
+                    .quantity{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        transform: translateY(17%);
+                        margin-left: 1rem;
+                        
+                        
+                        span{
+                            margin-bottom: 1rem;
+                            background: white;
+                            border:1px solid black;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 40px;
+                            height: 40px;
+                            cursor: pointer;
+                            &:nth-child(2){
+                                border-left: 0;
+                                border-right: 0;
+                                cursor:text;
+                            }
+                        }
+                      }
+                }
+                .button{
+                    width: 100%; 
+                    background:#ffb52e;
+                    outline:none;
+                    border:none;
+                    color:white;
+                    padding:0.5rem 0.6rem;
+                   
+                    
+                    cursor: pointer;
+                   
+                    
+                 
+                  }
+             }
+
+         }
+         .totalAmount{
+            width: 100%;
+            
+            border:1px solid rgba(0,0,0,0.3);
+            padding:1rem;
+            
+            .total{
+                margin-bottom: 1rem;
+            }
+           .btnPayment{
+            display: block;
+            background:#ffb52e;
+            outline:none;
+            border:none;
+            color:white;
+            padding:0.6rem 0.6rem;
+            cursor: pointer;
+            text-align: center;
+            border-radius: 7px;
+           }
+           .btnCheckout{
+            display: block;
+            background:gray;
+            outline:none;
+            border:none;
+            color:white;
+            padding:0.6rem 0.6rem;
+            cursor: pointer; 
+            margin-bottom: 0.5rem;
+            text-align: center;
+            border-radius: 7px;
+           }
+        }
+    .nothingHere{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        .icon{
+            width: 150px;
+            height: 150px;
+            color:gray;
+            margin-bottom: 1rem;
+        }
+        .title{
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+        }
+        .button{
+            width: fit-content; 
+            background:#ffb52e;
+            text-transform: uppercase;
+            outline:none;
+            border:none;
+            color:white;
+            padding:0.6rem 0.6rem;
+            border-radius: 7px;
+            
+            cursor: pointer;
+
+        }
+    }
+    }
+}
